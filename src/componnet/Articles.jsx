@@ -56,7 +56,7 @@ const add = fullData.slice (currentItemsNumber , rest>3 ? currentItemsNumber + i
   useEffect(() => { 
 
     async function fetchData() {
-      let res = await fetch("https://jsonplaceholder.typicode.com/posts")
+      let res = await fetch("http://localhost:5051/posts")
       let json = await res.json();
       
       setFullData(json);
